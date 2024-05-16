@@ -35,9 +35,9 @@ instructions, and duration. <br>
 7. Billing:
 • Manages financial transactions related to healthcare services, including
 invoices, payments, and outstanding balances. <br>
-**Model Classes** <br>
+
 <br>
-**1. Model Classes:** <br>
+****1. Model Classes:** <br>**
 • All model classes (Person, Patient, Doctor, Appointment, MedicalRecord,
 Prescription, Billing) are well-implemented with correct attributes, getters,
 setters, and constructors. Proper use of inheritance with clear hierarchies and
