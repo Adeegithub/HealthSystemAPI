@@ -71,3 +71,8 @@ operation on resources. Methods align with CRUD operations. <br>
 5. Code Organization: <br>
 • Organize code following best practices for separation of concerns, modularity,
 and maintainability. Providing clear explanations for codes. <br>
+<br>
+
+***********
+<strong> To test the api download the postman request collection file and import it through postman. All the requests will appear in the postman. <strong>
+***********
