@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "30e9dc45-06f7-4a9d-b198-a7b49006edeb",
+		"name": "AAG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30456756",
+		"_collection_link": "https://interstellar-flare-381284.postman.co/workspace/My-Workspace~70467e43-0971-4f66-8c24-d52bf65dbccf/collection/30456756-30e9dc45-06f7-4a9d-b198-a7b49006edeb?action=share&source=collection_link&creator=30456756"
+	},
+	"item": [
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/person"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Person by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/person/1005"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Person",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"personId\": 1003,\n        \"personName\": \"Mitch Santner\",\n        \"personPhone\": \"0777777777\",\n        \"email\": \"mitch@gmail.com\",\n        \"address\": \"New Zealand\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/person"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Person",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"personId\": 1006,\n        \"personName\": \"Adeesha Ravindra\",\n        \"personPhone\": \"077777454\",\n        \"email\": \"rachin@gmail.com\",\n        \"address\": \"New Zealand\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/person/1000"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/person/1003"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "Get Appointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/appointment"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Appointment By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/appointment/4001"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"appointmentId\": 4003,\n        \"patientId\": 3002,\n        \"doctorId\": 2002,\n        \"date\": \"14 MAR 2024\",\n        \"time\": \"08.30 AM\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/appointment"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Appointment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"appointmentId\": 4000,\n        \"patientId\": 3000,\n        \"doctorId\": 2000,\n        \"date\": \"12 MAR 2024\",\n        \"time\": \"08.40 AM\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/appointment/4001"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/appointment/4003"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Billing",
+			"item": [
+				{
+					"name": "Get All Bills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/billing"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bill by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/billing/5001"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Bill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"billingId\": 6001,\n    \"patientId\": 3001,\n    \"amountDue\": 2800.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/billing"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Bill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"billingId\": 5003,\n    \"patientId\": 3001,\n    \"amountDue\": 3400.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/billing/5001"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Bill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/billing/5002"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "Get All Doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/doctor"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Doctor By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/doctor/2000"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Doctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"personId\": 1003,\n        \"personName\": \"Murali Vijay\",\n        \"personPhone\": \"0772580147\",\n        \"email\": \"Ravi@gmail.com\",\n        \"address\": \"India\",\n        \"doctorId\": 2000,\n        \"specialization\": \"EYE\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/doctor"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Doctor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"personId\": 1003,\n        \"personName\": \"Murali Sing Vijay\",\n        \"personPhone\": \"0772580147\",\n        \"email\": \"Ravi@gmail.com\",\n        \"address\": \"India\",\n        \"doctorId\": 2002,\n        \"specialization\": \"EYE\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/doctor/2001"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Doctor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/doctor/2002"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medical Records",
+			"item": [
+				{
+					"name": "Get All Medical Records",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/medicalRecord"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Medical Record By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/medicalRecord/6000"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Medical Record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"medicalRecordId\": 6009,\n        \"patientId\": 30000,\n        \"details\": \"Medical Record Three\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/medicalRecord"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Medical Record",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"medicalRecordId\": 6000,\n        \"patientId\": 3090,\n        \"details\": \"Medical Record ZERO\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/medicalRecord/6000"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Record",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/medicalRecord/6002"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Get All Patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/patient"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/patient/3000"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"personId\": 1006,\n        \"personName\": \"Adzi Khan\",\n        \"personPhone\": \"0775860147\",\n        \"email\": \"rashid@gmail.com\",\n        \"address\": \"Afghanistan\",\n        \"patientId\": 3000,\n        \"medicalHistory\": \"Asthma\",\n        \"currentHealthStatus\": \"Normal\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/patient/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patient",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"personId\": 1006,\n        \"personName\": \"Adzi Badzi Khan\",\n        \"personPhone\": \"0775860147\",\n        \"email\": \"rashid@gmail.com\",\n        \"address\": \"Afghanistan\",\n        \"patientId\": 3002,\n        \"medicalHistory\": \"Asthma\",\n        \"currentHealthStatus\": \"Normal\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/patient/3002"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/patient/3002"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prescription",
+			"item": [
+				{
+					"name": "Get All Precriptions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/prescription"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Prescription By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/prescription/7000"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Prescription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"prescriptionId\": 7000,\n        \"patientId\": 3000,\n        \"doctorId\": 2000,\n        \"medication\": \"Rosuvas\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/prescription/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Prescription",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"prescriptionId\": 7000,\n        \"patientId\": 3000,\n        \"doctorId\": 2000,\n        \"medication\": \"Rontuvas\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/HealthSystemAPI/rest/prescription/7002"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Prescription",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/HealthSystemAPI/rest/prescription/7002"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
