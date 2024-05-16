@@ -36,23 +36,24 @@ instructions, and duration. <br>
 • Manages financial transactions related to healthcare services, including
 invoices, payments, and outstanding balances. <br>
 **Model Classes** <br>
-1. Model Classes:
+<br>
+**1. Model Classes:** <br>
 • All model classes (Person, Patient, Doctor, Appointment, MedicalRecord,
 Prescription, Billing) are well-implemented with correct attributes, getters,
 setters, and constructors. Proper use of inheritance with clear hierarchies and
 relationships among classes. All classes have well-defined constructors with
 appropriate parameters and initialization of attributes. <br>
-2. DAO Implementation :
+**2. DAO Implementation : <br>**
 • Create well-implemented DAO classes (PersonDAO, PatientDAO, DoctorDAO,
 AppointmentDAO, MedicalRecordDAO, PrescriptionDAO, BillingDAO) with all
 CRUD methods for corresponding entities. Implement comprehensive
 exception handling and validation using HTTP response codes. <br>
-3. Logging and Exception Handling:
+**3. Logging and Exception Handling:** <br>
 • Implement comprehensive logging throughout the codebase, providing detailed
 information for debugging and auditing. Ensure exception handling covers a
 wide range of scenarios with informative error messages using appropriate
 HTTP response codes. <br>
-4. Restful resource implementation:
+**4. Restful resource implementation:** <br>
 • All resource classes (PersonResource, PatientResource, DoctorResource,
 AppointmentResource, MedicalRecordResource, PrescriptionResource,
 BillingResource) follow RESTful principles correctly. Resource methods for
@@ -63,6 +64,6 @@ accurately implemented. Resources are clearly identified and named according
 to RESTful conventions. URIs are intuitive, hierarchical, and self-explanatory.
 Appropriate HTTP methods (GET, POST, PUT, DELETE, etc.) are used for each
 operation on resources. Methods align with CRUD operations. <br>
-5. Code Organization:
+**5. Code Organization:** <br>
 • Organize code following best practices for separation of concerns, modularity,
 and maintainability. Providing clear explanations for codes. <br>
